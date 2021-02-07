@@ -1,0 +1,40 @@
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    flex-direction: column;
+}
+
+h2{
+    font-size: 8em;
+}
+
+h2 .z-layer:first-child{
+    color: #f44336;
+}
+
+h2 .z-layer{
+    color: #b73229;
+}
+
+img{
+    position: relative;
+    min-width: 200px;
+}
+
+.z-layer:first-child{
+    filter:brightness(1) ;
+}
+.z-layer{
+    filter:brightness(0.7) ;
+}

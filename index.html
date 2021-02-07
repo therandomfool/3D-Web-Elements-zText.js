@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>3D Web Elements zText.JS</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <h2 class="emoji-layers">🌶 🍰 🍣</h2>
+    <h2 class="text-layers">Cool</h2>
+    <div class="image-layers">
+        <img src="https://picsum.photos/200/200?random=2" class='img'>
+    </div>
+    <script src="ztext.min.js"></script>
+
+    <script>
+      var ztxt = new Ztextify(".text-layers", {
+        depth: "50px",
+        layers: 80,
+        fade: false,
+        direction: "backwards",
+        eventDirection: "reverse",
+        event: "pointer",
+        eventRotation: "35deg",
+      });
+      var emoji = new Ztextify(".emoji-layers", {
+        depth: "30px",
+        layers: 800,
+        fade: false,
+        direction: "forwards",
+        eventDirection: "default",
+        event: "pointer",
+        eventRotation: "35deg",
+      });
+      var image = new Ztextify(".image-layers", {
+        depth: "100px",
+        layers: 80,
+        fade: false,
+        direction: "forwards",
+        eventDirection: "default",
+        event: "pointer",
+        eventRotation: "35deg",
+      });
+    </script>
+  </body>
+</html>
